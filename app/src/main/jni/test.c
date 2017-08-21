@@ -1,7 +1,7 @@
 //
 // Created by HEC271 on 2017/8/21.
 //
-#include "com_hexing_ndktest_Java.h"
+#include "com_hexing_ndk_Java.h"
 
 JNIEXPORT jstring JNICALL Java_com_hexing_ndkDemo_Java2CJNI_testJni
         (JNIEnv *env, jobject instance){
