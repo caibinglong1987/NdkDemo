@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.0"
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.hexing.ndkDemo"
         minSdkVersion 19
@@ -21,6 +21,12 @@ android {
     sourceSets {
         main {
             jniLibs.srcDir(['libs'])
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
         }
     }
 }

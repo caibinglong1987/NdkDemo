@@ -9,8 +9,10 @@ package com.hx.hexintegrated;
 public class HexNative {
 
     static {
-       // System.loadLibrary("HexLibrary");
+        // System.loadLibrary("HexLibrary");
     }
 
     public static native String encryption(String deviceId);
+
+    public static native String encryptionByCusLen(String deviceId, int codeLen);
 }

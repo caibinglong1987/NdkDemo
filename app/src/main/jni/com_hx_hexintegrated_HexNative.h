@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT jstring JNICALL Java_com_hx_hexintegrated_HexNative_encryption
   (JNIEnv *, jclass, jstring);
 
+/*
+ * Class:     com_hx_hexintegrated_HexNative
+ * Method:    encryptionByCusLen
+ * Signature: (Ljava/lang/String;I)Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_hx_hexintegrated_HexNative_encryptionByCusLen
+  (JNIEnv *, jclass, jstring, jint);
+
 #ifdef __cplusplus
 }
 #endif
