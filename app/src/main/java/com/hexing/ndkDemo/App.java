@@ -2,6 +2,8 @@ package com.hexing.ndkDemo;
 
 import android.app.Application;
 
+import com.hx.hexintegrated.HexNative;
+
 /**
  * 在此写用途
  * <p>
@@ -15,9 +17,5 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-    }
-
-    static {
-        System.loadLibrary("HexLibrary");
     }
 }
