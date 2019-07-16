@@ -34,7 +34,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Log.d("Encryption", HexNative.encryption("Nb123456789"));
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int i = 50;
+                while (i > 0) {
+                    System.out.println("Encryption||" + HexNative.encryption("Nb123456789"));
+                    i--;
+                    try {
+                        Thread.sleep(200);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                // System.out.println("Encryption 11111");
+            }
+        }).start();
+
+       // Log.d("Encryption", HexNative.encryption("Nb123456789"));
     }
 
     @Override
